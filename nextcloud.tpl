@@ -17,11 +17,11 @@
         php_admin_value open_basedir %docroot%:%home%/%user%/tmp:/var/log/nextcloud
         php_admin_value upload_tmp_dir %home%/%user%/tmp
         php_admin_value session.save_path %home%/%user%/tmp
-		php_value upload_max_filesize 4G
-		php_value post_max_size 4G
-		php_value max_input_time 10000
-		php_value max_execution_time 10000
-		php_value memory_limit 512M
+	php_value upload_max_filesize 4G
+	php_value post_max_size 4G
+	php_value max_input_time 10000
+	php_value max_execution_time 10000
+	php_value memory_limit 512M
     </Directory>
     <Directory %home%/%user%/web/%domain%/stats>
         AllowOverride All
